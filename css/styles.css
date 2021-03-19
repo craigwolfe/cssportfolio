@@ -49,7 +49,7 @@ h2 {
   margin: 0;
 }
 h3 {
-  margin-top: 0;
+  margin-bottom: 0;
 }
 .content-wrap {
   width: 800px;
@@ -57,6 +57,20 @@ h3 {
   padding: 60px 0;
   display: grid;
 }
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+.divider-line > section {
+  border-bottom: 1px dotted #4b4453;
+  padding: 25px 0px;
+}
+.divider-line > section:last-child {
+  border-bottom: none;
+}
+
 /* Profile
 -----------------------------------*/
 header {
@@ -83,10 +97,10 @@ header {
   background: rgba(66, 68, 173, 80%);
   display: inline;
 }
+.divider-line {
+}
 .project-item {
   overflow: hidden;
-  border-bottom: 1px dotted #4b4453;
-  padding: 25px 0px;
 }
 .project-item img {
   float: left;
@@ -99,6 +113,12 @@ header {
 ------------------------------------*/
 .work-experience {
   background: #a1c6d7;
+}
+
+.job-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
 }
 /* Education
 ------------------------------------*/
