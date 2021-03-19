@@ -6,24 +6,7 @@ COLOR PALETTE
 #FFE66D - yellow
 #A1C6D7 - blue light
 */
-/*Responsive styles*/
-@media screen and (min-width: 750px) {
-  .education {
-    background-image: url(../images/web_design_notebook_computer.jpg);
-    background-position: top right;
-    background-size: cover;
-    padding-top: 150px;
-  }
-  .project-item img {
-    float: left;
-    margin-right: 20px;
-  }
-  .job-item {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
-  }
-}
+
 /* Global styles
 ------------------------------------*/
 
@@ -140,17 +123,40 @@ header {
 footer {
   background: #4b4453;
   color: #f7fff7;
-  text-align: center;
 }
-
-.contact-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+footer li {
+  list-style-type: none;
+  padding: 5px;
 }
-.contact-list a {
-  padding: 15px;
-  display: inline-block;
+/*-------------Responsive styles--------------*/
+@media screen and (min-width: 750px) {
+  .education {
+    background-image: url(../images/web_design_notebook_computer.jpg);
+    background-position: top right;
+    background-size: cover;
+    padding-top: 150px;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+  footer {
+    text-align: center;
+  }
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .contact-list a {
+    padding: 15px;
+    display: inline-block;
+  }
 }
