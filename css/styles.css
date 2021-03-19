@@ -37,17 +37,17 @@ a:hover {
   text-decoration: none;
 }
 h1 {
-  font-size: 75px;
-  line-height: 1.5;
+  font-size: 55px;
 }
 h2 {
-  font-size: 45px;
+  font-size: 35px;
 }
 h1,
 h2 {
   font-family: "Shadows Into Light", cursive;
   font-weight: 400;
   margin: 0;
+  padding: 10px 0;
 }
 h3 {
   margin-bottom: 0;
@@ -78,7 +78,6 @@ h3 {
 header {
   background: #4244ad;
   color: #f7fff7;
-  text-align: center;
 }
 /* Projects
 ------------------------------------*/
@@ -128,6 +127,10 @@ footer li {
   list-style-type: none;
   padding: 5px;
 }
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
 /*-------------Responsive styles--------------*/
 @media screen and (min-width: 750px) {
   .education {
@@ -145,18 +148,25 @@ footer li {
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
   }
+  header,
   footer {
     text-align: center;
   }
   .contact-list {
-    list-style: none;
-    padding: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
   }
-  .contact-list a {
-    padding: 15px;
-    display: inline-block;
-  }
+  h1 {
+    font-size: 75px;
+   line-height:.8;
+   margin-bottom: 30px;
+  padding: 0;
+ }
+ h2 {
+  font-size: 45px;
+  line-height: .8;
+}
+  @media screen and (max-width: 749px) {
+ 
+ 
 }
