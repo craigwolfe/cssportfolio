@@ -123,7 +123,12 @@ header {
 }
 /* Education
 ------------------------------------*/
-
+.education {
+  background-image: url(../images/web_design_notebook_computer.jpg);
+  background-position: top right;
+  background-size: cover;
+  padding-top: 150px;
+}
 /* Contact Info
 ------------------------------------*/
 footer {
