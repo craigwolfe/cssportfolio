@@ -61,6 +61,7 @@ h3 {
 header {
   background: #4244ad;
   color: #f7fff7;
+  text-align: center;
 }
 /* Projects
 ------------------------------------*/
@@ -98,7 +99,6 @@ header {
 .work-experience {
   background: #a1c6d7;
 }
-
 /* Education
 ------------------------------------*/
 
@@ -107,4 +107,16 @@ header {
 footer {
   background: #4b4453;
   color: #f7fff7;
+  text-align: center;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
 }
