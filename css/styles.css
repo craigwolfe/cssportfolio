@@ -2,13 +2,22 @@
 COLOR PALETTE
 #F7FFF7 - white
 #4b4453 - dark gray 
-#2F3061 - blue dark
+#4244AD - blue dark
 #FFE66D - yellow
 #A1C6D7 - blue light
 */
 
 /* Global styles
 ------------------------------------*/
+/* Universal Box Sizing with Inheritance */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 body {
   color: #4b4453;
   margin: 0;
@@ -28,14 +37,19 @@ a:hover {
 }
 h1 {
   font-size: 75px;
+  line-height: 1.5;
 }
 h2 {
-  margin: 0;
   font-size: 45px;
 }
 h1,
 h2 {
   font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  margin: 0;
+}
+h3 {
+  margin-top: 0;
 }
 .content-wrap {
   width: 800px;
@@ -45,7 +59,7 @@ h2 {
 /* Profile
 ------------------------------------*/
 header {
-  background: #2f3061;
+  background: #4244ad;
   color: #f7fff7;
 }
 /* Projects
@@ -54,20 +68,31 @@ header {
   background: #f7fff7;
 }
 .projects a {
-  color: #2f3061;
+  color: #4244ad;
 }
 .projects .btn {
   color: #f7fff7;
-  background: #2f3061;
+  background: #4244ad;
   text-decoration: none;
   padding: 8px;
   border-radius: 4px;
 }
 .projects .btn:hover {
-  background: rgba(47, 48, 97, 80%);
+  background: rgba(66, 68, 173, 80%);
   display: inline;
 }
-
+.project-item {
+  overflow: hidden;
+  border-bottom: 1px dotted #4b4453;
+  padding: 25px 0px;
+}
+.project-item img {
+  float: left;
+  margin-right: 20px;
+}
+.project-item li {
+  margin-left: 100px;
+}
 /* Work Experience
 ------------------------------------*/
 .work-experience {
