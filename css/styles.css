@@ -44,7 +44,9 @@ h2 {
 }
 h1,
 h2 {
-  font-family: "Shadows Into Light", cursive;
+  /* font-family: "Shadows Into Light", cursive; */
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+font-family: 'Pacifico', cursive;
   font-weight: 400;
   margin: 0;
   padding: 10px 0;
