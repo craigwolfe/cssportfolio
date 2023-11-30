@@ -9,6 +9,7 @@ COLOR PALETTE
 
 /* Global styles
 ------------------------------------*/
+
 /* Universal Box Sizing with Inheritance */
 html {
   box-sizing: border-box;
@@ -27,7 +28,7 @@ body {
   line-height: 1.5;
 }
 img {
-  width: 300px;
+  max-width: 300px;
 }
 a {
   color: #ffe66d;
@@ -36,32 +37,47 @@ a:hover {
   text-decoration: none;
 }
 h1 {
-  font-size: 75px;
-  line-height: 1.5;
+  font-size: 55px;
 }
 h2 {
-  font-size: 45px;
+  font-size: 35px;
 }
 h1,
 h2 {
   font-family: "Shadows Into Light", cursive;
   font-weight: 400;
   margin: 0;
+  padding: 10px 0;
 }
 h3 {
-  margin-top: 0;
+  margin-bottom: 0;
 }
 .content-wrap {
-  width: 800px;
+  max-width: 800px;
+  width: 85%;
   margin: 0 auto;
   padding: 60px 0;
+  display: grid;
 }
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+.divider-line > section {
+  border-bottom: 1px dotted #4b4453;
+  padding: 25px 0px;
+}
+.divider-line > section:last-child {
+  border-bottom: none;
+}
+
 /* Profile
-------------------------------------*/
+-----------------------------------*/
 header {
   background: #4244ad;
   color: #f7fff7;
-  text-align: center;
 }
 /* Projects
 ------------------------------------*/
@@ -82,23 +98,21 @@ header {
   background: rgba(66, 68, 173, 80%);
   display: inline;
 }
+
 .project-item {
   overflow: hidden;
-  border-bottom: 1px dotted #4b4453;
-  padding: 25px 0px;
 }
-.project-item img {
-  float: left;
-  margin-right: 20px;
-}
+
 .project-item li {
   margin-left: 100px;
 }
+
 /* Work Experience
 ------------------------------------*/
 .work-experience {
   background: #a1c6d7;
 }
+
 /* Education
 ------------------------------------*/
 
@@ -107,16 +121,51 @@ header {
 footer {
   background: #4b4453;
   color: #f7fff7;
-  text-align: center;
 }
-
+footer li {
+  list-style-type: none;
+  padding: 5px;
+}
 .contact-list {
   list-style: none;
   padding: 0;
-  display: flex;
-  justify-content: center;
 }
-.contact-list a {
-  padding: 15px;
-  display: inline-block;
+/*-------------Responsive styles--------------*/
+@media screen and (min-width: 750px) {
+  .education {
+    background-image: url(../images/web_design_notebook_computer.jpg);
+    background-position: top right;
+    background-size: cover;
+    padding-top: 150px;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+  header,
+  footer {
+    text-align: center;
+  }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 75px;
+   line-height:.8;
+   margin-bottom: 30px;
+  padding: 0;
+ }
+ h2 {
+  font-size: 45px;
+  line-height: .8;
+}
+  @media screen and (max-width: 749px) {
+ 
+ 
 }
